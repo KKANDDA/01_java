@@ -43,7 +43,7 @@ public class Application02 {
         float fnum; // 4byte
         double dnum; // 8byte
 
-        //목파 1-2 문자를 취급하는 자료형
+        //목차 1-2 문자를 취급하는 자료형
 
         char ch; // 2byte
         System.out.println((char) 97); // 아스키코드

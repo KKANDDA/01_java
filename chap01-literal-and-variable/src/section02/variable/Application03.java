@@ -68,6 +68,26 @@ package section02.variable;public class Application03 {
         String userName; // 자바는 이렇게! 근데 회사마다 다를 수도..
 
         // 한글로 변수명을 지정하는 것도 가능하나, 권장하지는 않는다.
+        int 나이;
+
+        // 변수 안에 저장된 값이 어떤 의미를 가지는지 명확하게 표현하도록 한다.
+        String s; // 어떨때 쓰라고 맹근거여..??
+        String name;
+
+
+        // 전형적인 변수 이름이 있다면 가급적 사용한다.
+        int sum = 0;
+        int max = 10;
+        int min = 0;
+        int count = 0;
+
+        // 명사형으로 작성할 수 있도록 한다.
+        String goHome; // 가능
+        String home;
+
+        // boolean 형은 가급적 긍정형태로 작성한다.
+        boolean isAlive = true;
+        boolean isDead = false;
 
 
 
