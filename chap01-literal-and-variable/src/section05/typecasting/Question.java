@@ -72,7 +72,9 @@ public class Question {
         System.out.println("홍길동의 총 매풀은 " + sumAll + "원 입니다.");
         System.out.println("부가세를 제외한 소득은 " + texExclusion + "이고 부가세는 " + tex +"원 입니다.");
 
-        
+
+
+
 
 
 
