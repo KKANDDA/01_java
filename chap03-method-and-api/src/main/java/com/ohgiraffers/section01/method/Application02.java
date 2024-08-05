@@ -13,16 +13,17 @@ public class Application02 {
         * */
 
         Application02 app2 = new Application02();
-        app2.methodA();
+        int a = app2.methodA(5554454, 6546541);
+        System.out.println(a);
         app2.methodB();
-        app2.methodC();
         System.out.println("main() 메소드 종료됨");
 
     }
 
-    public void methodA(){
+    public int methodA(int a, int b){
         System.out.println("methodA() 호출됨");
         System.out.println("methodA() 종료됨");
+        return (a+b);
     }
 
     public void methodB() {
