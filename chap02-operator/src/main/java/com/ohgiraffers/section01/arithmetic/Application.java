@@ -28,6 +28,7 @@ public class Application {
         System.out.println("num1 + num2 = " + num1 + num2); // 문자열은 사칙 연산이 통하지 않는다.
         System.out.println("num1 + num2 = " + (num1 + num2)); // 괄호를 사용하여 정수들을 먼저 더하고 문자열로 바뀌도록 유도한다.
         System.out.println("num1 - num2 = " + (num1 - num2)); // 문자열은 뺄 수 없다.
+
         System.out.println("num1 * num2 = " + num1 * num2); // 사칙연산의 법칙대로 곱셈 나눗셈, 나머지 연산이 먼저 연산이 되고 문자열로 바뀌었다.
         System.out.println("num1 / num2 = " + num1 / num2);
         System.out.println("num1 % num2 = " + num1 % num2);
