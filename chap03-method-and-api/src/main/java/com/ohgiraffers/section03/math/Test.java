@@ -24,5 +24,11 @@ public class Test {
         System.out.println("0~9 난수 : " + randomZeroToNine02);
         System.out.println("1~10 난수 : " + randomOneToTen02);
 
+        // -128~127까지
+        int randomNumber = rand.nextInt(256)-128; // nextInt 메소드를 이용해서 만들었다.
+        int randomNumber2 = (int)(Math.random()*256)-128; // static Math 클래스의 random 메소드를 이용해서 만들었다.
+        System.out.println("-128~127 난수 : " + randomNumber);
+        System.out.println("-128~127 난수 : " + randomNumber2);
+
     }
 }
