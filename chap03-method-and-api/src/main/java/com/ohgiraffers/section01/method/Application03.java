@@ -23,7 +23,6 @@ public class Application03 {
         * */
 
         Application03 app3 = new Application03();
-
         //호출하려는 메소드의 매개변수 선언부에 미리 선언해둔 자료형, 갯수, 순서가 일치하게 값을 넣어 호출한다.
         app3.testMethod(20); //(20) 전달인자 아규먼트
         // app3.testMethod(20, 30); // 갯수가 일치하지 않으면 호출할 수 없다.
