@@ -13,6 +13,21 @@ public class Application {
         // a.testForExample();
         // a.testForExample2();
         // a.testForExample3();
-        a.primeNumber();
+        // a.primeNumber();
+
+        B_nestedFor b = new B_nestedFor();
+        // b.printGugudanFromTwoToNine();
+        // b.printUpgradeGugudan();
+        // b.printStars();
+        // b.printStars2();
+
+        C_while c = new C_while();
+        // c.testSimpleWhileStatement();
+        // c.testWholeExample1();
+        // c.testWhileExample3();
+
+        D_doWhile d = new D_doWhile();
+        // d.testSimpleDoWhileStatement();
+        d.testDoWhileExample();
     }
 }
