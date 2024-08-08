@@ -95,22 +95,22 @@ public class BendMachine {
         * */
 
         Scanner scr = new Scanner(System.in);
-
+// static 이 없는 Scanner 클래스 를 선언.
         System.out.println("---------------------- vendig machine ------------------");
         System.out.println("사이다(500), 콜라(600), 환타(700), 박카스(1000), 핫식스(1500)");
         System.out.println("--------------------------------------------------------");
-
-        int allSumPrice = 0;
-        String allDrink = "";
-
+// 자판기 초기 설명문 출력.
+        int allSumPrice = 0; // int 정수 자료형이기에 정수를 받을 수 있도록 준비해 놓는다.
+        String allDrink = ""; // String 은 문자열 자료형이기에 문자열만 받을 수 있기에 "" 로 명확히 초기값을 설정한다.
+// 최종적으로 출력해 줄 변수들을 선언 및 초기값 설정.
         System.out.println("음료를 선택해 주세요.");
-
-        for(;;){
-            String selectedDrink = scr.nextLine();
-            switch(selectedDrink){
-                case "사이다" :
+// 자판기 동작을 유도하는 출력문.
+        for(;;){ // while(true){} 로도 무한루프를 만들 수 있다. 여기서 빙글빙글 돌며 계속 작업을 수행한다. break; fh 닫기 전까지..!
+            String selectedDrink = scr.nextLine(); // 사용자로부터 변수을 입력받는다. nextLine 는 문자열 변수이다.
+            switch(selectedDrink){ // switch 는 비교 변수를 설정해 놓고, 사용자로부터 변수를 받아, case 에 담아둔 변수와 비교하여 true 면 : 이하의 값을 출력한다.
+                case "사이다" : // 사용자가 입력한 변수와 비교할 변수.
                     System.out.println("사이다요? 흐음..?! 500원이요.");
-                    allDrink += "사이다 "; allSumPrice += 500;  break;
+                    allDrink += "사이다 "; allSumPrice += 500;  break; // switch 문에서 break; 는 비교 후 출력될 값을 정해주는 수행한다.
                 case "콜라" :
                     System.out.println("콜라! 아~주 져아여~! 600원이요~");
                     allDrink += "콜라 "; allSumPrice += 600; break;
@@ -123,9 +123,9 @@ public class BendMachine {
                 case "핫식스" :
                     System.out.println("핫식스!! 고생이 많으십니다. 1500원입니다.");
                     allDrink += "핫식스 "; allSumPrice += 1500; break;
-                default:
-                    System.out.println("그런건 읎어요..!");
-                    continue;
+                default: // default 를 해주지 않으면 사용자가 switch 에 등록된 값 이외의 것을 입력할 때에 오류가 난다.
+                    System.out.println("그런건 읎어요..!"); // 비교해서 true가 나올 수 있는 값이 입력되지 않았기 때문에 default 로 닫고 다시 무한루프로 돌려 보냈다.
+                    continue; /////////////////////////////////////////////////////
             }
             System.out.println("무튼, 계속 주문하시겠어요? - 네 / 아니오");
             String yes = scr.nextLine();
