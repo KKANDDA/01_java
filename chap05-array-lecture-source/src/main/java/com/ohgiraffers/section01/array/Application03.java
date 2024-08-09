@@ -22,7 +22,14 @@ public class Application03 {
         * 값의 갯수만큼 자동으로 크기가 설정된다.
         * */
         int[] iarr2 = {11,22,33,44,55};
-        int[] iarr3 = new int[]{11,22,33,44,55}; //
+        int[] iarr3 = new int[5];
+        iarr3[0] = 11;
+        iarr3[1] = 22;
+        iarr3[2] = 33;
+        iarr3[3] = 44;
+        iarr3[4] = 55;
+
+        //{11,22,33,44,55}; //
 
         System.out.println("iarr2.length = " + iarr2.length);
         System.out.println("iarr3.length = " + iarr3.length);
