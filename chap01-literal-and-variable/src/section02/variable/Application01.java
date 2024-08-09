@@ -42,6 +42,7 @@ public class Application01 {
         String name = "김쿠팡";
         int point = 100; // =는 대입하는 의미를 가지고 있다. 수학적 기호로써 동일하다는 의미가 아니다.
 
+
         System.out.println(name + "은 쇼핑몰 중독이다. \n 지난 달 "
                 + name + "의 쿠팡의 보너스 포인트는" + point + "였다"
                 );
