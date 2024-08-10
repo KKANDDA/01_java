@@ -44,7 +44,7 @@ public class Queation03 {
 
         // 모두 같은 값이 입력되면
         if(max == secondMax){
-            System.out.println("두번째로 큰 값을 찾을 수 없습니다.");
+            System.out.println("두 번째로 큰 값을 찾을 수 없습니다.");
             return;
         }
 

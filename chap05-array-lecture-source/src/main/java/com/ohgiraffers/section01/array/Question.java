@@ -57,34 +57,32 @@ public class Question {
         */
         Scanner scr = new Scanner(System.in);
 
-        while (true) {
+
 
             System.out.println("---- 배열 안의 큰 수 찾기 ---- \n" +
                     "배열의 크기를 정해주세요. 1보다 큰 정수를 입력해 주세요.");
-            int a = scr.nextInt();
-            int[] arryLength = new int[a];
+            int length = scr.nextInt();
+            int[] arry = new int[length];
 
             System.out.println();
 
-            if (a <= 1) {
+            if (length <= 1) {
                 System.out.println("입력하신 숫자가 1보다 작습니다. 다시 입력해 주세요.");
-                continue;
+                return;
             }
+            System.out.println("좋습니다. 입력하신 수의 크기만큼 수를 반복해 넣어주세요. \n" +
+                    "순서 상관없이 넣으셔도 가장 큰 수와 두 번째 큰 수를 찾아드립니다.");
 
-            int firstMaxNum = 0;
-            for (int i = 0; i < arryLength.length; i++) {
-                System.out.println("좋습니다. 입력하신 수의 크기만큼 수를 반복해 넣어주세요. \n" +
-                        "순서 상관없이 넣으셔도 가장 큰 수와 두 번째 큰 수를 찾아드립니다. (정수가 아닌, 실수여도 좋습니다.)");
-                arryLength[i] = scr.nextInt();}
-
-            for (int i = 0; i < arryLength.length; i++) {
-                for (int k = i+1; k < arryLength.length; k++) {
-                    if (arryLength[i] > arryLength[k]) {
-                        firstMaxNum = arryLength[i];
-                    }
-                }System.out.println("가장 큰 수는 " + firstMaxNum + "입니다.");
+            for (int i = 0; i < length; i++) {
+                arry[i] = scr.nextInt();
             }
-        }
+            int firstMaxNum = arry[0];
+            for (int i = 0; i < length; i++) {
+                if(arry[i] > firstMaxNum){
+                    firstMaxNum = arry[i];
+                }
+            }
+        System.out.println("가장 큰 수는 " + firstMaxNum + "입니다.");
     }
 }
 

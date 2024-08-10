@@ -41,35 +41,35 @@ public class Question02 {
         이후 부여된 수들을 서로간에 비교하여 가장 큰 수와 두 번째로 큰 수를 뽑아냅니다.)
         */
         Scanner scr = new Scanner(System.in);
+        System.out.println("---- 배열 안의 큰 수 찾기 ---- \n" +
+                "배열의 크기를 정해주세요. 1보다 큰 정수를 입력해 주세요.");
+        int length = scr.nextInt();
+        double[] arry = new double[length];
 
-        while (true) {
-
-            System.out.println("---- 배열 안의 큰 수 찾기 ---- \n" +
-                    "배열의 크기를 정해주세요. 1보다 큰 정수를 입력해 주세요.");
-            int a = scr.nextInt();
-            int[] arryLength = new int[a];
-
-            if (a <= 1) {
-                System.out.println("입력하신 숫자가 1보다 작습니다. 다시 입력해 주세요.");
-                continue;
-            }
-            for (int i = 0; i < arryLength.length; i++) {
-                System.out.println("좋습니다. 입력하신 수의 크기만큼 수를 반복해 넣어주세요. \n" +
-                        "순서 상관없이 넣으셔도 가장 큰 수와 두 번째 큰 수를 찾아드립니다. (정수가 아닌, 실수여도 좋습니다.)");
-
-                arryLength[i] = scr.nextInt();
-
-                int[] num = new int[i];
-                num[i] = scr.nextInt();
-
-                int firstMaxNum = 0;
-                for (int k = 0; k < i; k++) {
-                    if (num[i] > num[k]) {firstMaxNum = num[i];
-                    }else if(num[i] == num[k]){System.out.println("입력하신 수가 앞선 수와 같습니다.\n" +
-                            "처음부터 다시 입력해 주세요.");
-                    }System.out.println("가장 큰 수는 " + firstMaxNum + "입니다.");
-                }
-            }
+        if (length <= 1) {
+            System.out.println("입력하신 숫자가 1보다 작습니다. 다시 입력해 주세요.");
+            return;
         }
+        System.out.println("좋습니다. 입력하신 수의 크기만큼 수를 반복해 넣어주세요. \n" +
+                "순서 상관없이 넣으셔도 가장 큰 수와 두 번째 큰 수를 찾아드립니다. (정수가 아닌, 실수여도 좋습니다.)");
+        for (int i = 0; i < length; i++) {
+            arry[i] = scr.nextDouble();
+        }
+        System.out.println("큰 수와 작은 수를 찾는 중 입니다. \n"+"... ... .");
+
+        double big = arry[0];
+        double secondBig = arry[0];
+        for (int i = 0; i < length; i++) {
+            if(arry[i] > big){
+                secondBig = big;
+                big = arry[i];
+            }else if(arry[i] > secondBig || secondBig == big);
+            secondBig = arry[i];
+        }
+        if(big == secondBig){
+            System.out.println("입력하신 수가 앞선 수와 같습니다.\n" +
+                "처음부터 다시 입력해 주세요.");
+            return;
+        }System.out.println("가장 큰 수는 " + big + "두 번째 큰 수는 " +secondBig+ "입니다.");
     }
 }
