@@ -22,7 +22,7 @@ public class Application01 {
 
         // 배열의 인덱스 값 서로 변경하기
 
-        int[] arr = {2, 1,3};
+        int[] arr = {2,1,3};
 
         int temp2;
         temp2 = arr[0];
