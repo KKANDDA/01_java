@@ -47,7 +47,7 @@ public class Question02 {
         double[] arry = new double[length];
 
         if (length <= 1) {
-            System.out.println("입력하신 숫자가 1보다 작습니다. 다시 입력해 주세요.");
+            System.out.println("입력하신 숫자를 1보다 큰 수를 처음부터 입력해주세요.");
             return;
         }
         System.out.println("좋습니다. 입력하신 수의 크기만큼 수를 반복해 넣어주세요. \n" +
@@ -60,16 +60,14 @@ public class Question02 {
         double big = arry[0];
         double secondBig = arry[0];
         for (int i = 0; i < length; i++) {
-            if(arry[i] > big){
+            if (arry[i] > big) {
                 secondBig = big;
                 big = arry[i];
-            }else if(arry[i] > secondBig || secondBig == big);
-            secondBig = arry[i];
+            } else if (arry[i] > secondBig || secondBig == big) {
+                secondBig = arry[i];
+            }
         }
-        if(big == secondBig){
-            System.out.println("입력하신 수가 앞선 수와 같습니다.\n" +
-                "처음부터 다시 입력해 주세요.");
-            return;
-        }System.out.println("가장 큰 수는 " + big + "두 번째 큰 수는 " +secondBig+ "입니다.");
+
+        System.out.println("가장 큰 수는 " + big + "두 번째 큰 수는 " +secondBig+ "입니다.");
     }
 }
