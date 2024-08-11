@@ -47,7 +47,7 @@ public class Application02 {
                 System.out.println("가장 큰 값과 두 번째 큰 값을 찾고 있습니다.\n" +
                         "... ... .");
                 for(int i = 0; i < length; i++) {
-                    for(int j = i + 1; j < length; j++){
+                    for(int j = i+1; j < length; j++){
                         if(arry[i] > arry[j]){ // 오름차순으로 정렬했다.
                             int temp = arry[i];
                             arry[i] = arry[j];
@@ -57,7 +57,9 @@ public class Application02 {
 
                 }
                 System.out.println("가장 큰 수는 " + arry[length-1] + "두 번째로 큰 수는 " + arry[length-2] + "입니다.");
-                System.out.println("프로그램을 종료하고 싶으시다면 \"끝\"이라고 입력해주세요.");
+                System.out.println("프로그램을 종료하고 싶으시다면 \"끝\"이라고 입력해주세요. \n" +
+                        "계속하기를 원하시면 아무 문자나 입력해 주세요.");
+                scr.nextLine();
                 if(scr.nextLine().equals("끝")){
                     break;
                 }
