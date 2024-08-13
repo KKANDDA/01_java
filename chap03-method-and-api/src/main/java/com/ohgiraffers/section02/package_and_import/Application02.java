@@ -25,7 +25,7 @@ public class Application02 {
         System.out.println(min);
 
         // satstic 메소드 호출
-        int max = maxNumberOf(10, 30);
+        int max = maxNumberOf(10, 30); // 보통 이것으로!
         int max2 = Calculator.maxNumberOf(10, 30); // 또는 import 만을 사용해서 메소드명을 직접 붙여서 사용할 수도 있다. 상기에 import 가 생성됨.
         System.out.println(max);
         System.out.println(max2);
