@@ -1,14 +1,20 @@
 package nama.java.com.ohgiraffers.question;
 
-public class User {
+public class UserDTO {
 
     // 전역변수
     private String id;
     private String name;
-    private int pwd;
+    private String pwd;
+
+    // 로그인용 전역변수 생성자 // 아이디, 패스워드
+    public UserDTO(String id, String pwd) {
+        this.id = id;
+        this.pwd = pwd;
+    }
 
     // 전연 변수 초기화 생성자
-    public User(String id, String name, int pwd) {
+    public UserDTO(String id, String name, String pwd) {
         this.id = id;
         this.name = name;
         this.pwd = pwd;
@@ -31,11 +37,11 @@ public class User {
         this.name = name;
     }
 
-    public int getPwd() {
+    public String getPwd() {
         return pwd;
     }
 
-    public void setPwd(int pwd) {
+    public void setPwd(String pwd) {
         this.pwd = pwd;
     }
 

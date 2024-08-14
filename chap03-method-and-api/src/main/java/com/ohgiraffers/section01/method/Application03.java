@@ -27,7 +27,7 @@ public class Application03 {
         app3.testMethod(20); //(20) 전달인자 아규먼트
         // app3.testMethod(20, 30); // 갯수가 일치하지 않으면 호출할 수 없다.
         // app3.testMethod("30"); // 자료형이 일치하지 않으면 호출할 수 없다.
-        // app3.testMethod(); // 매개변수다 있는데 인자로 값을 전달하지 않으면 호출할 수 없다.
+        // app3.testMethod(); // 해당 메소드가 받아야할 매개변수가 있는데 빈칸으로 값을 전달하지 않으면 호출할 수 없다.
 
         // 변수에 저장한 값 전달
         int age = 20;
