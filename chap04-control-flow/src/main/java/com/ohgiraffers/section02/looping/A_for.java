@@ -203,6 +203,7 @@ public class A_for {
                     isTrue = false;
                     break;
                 }
+
             }
             if(isTrue == true){
                 System.out.println(i);

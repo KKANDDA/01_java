@@ -11,7 +11,7 @@ public class Application {
         loop:while (true) {
             System.out.println("------------ 웰컴 투 현준 월드 --------------");
             System.out.println("로그인을 원하시면 1번");
-            System.out.println("아직도 현준이의 친구가 아니십네까? \n 회원가입을 원하시면 2번");
+            System.out.println("아직도 현준이의 친구가 아니십네까? \n 회원 가입을 원하시면 2번");
             System.out.println("종료를 원하시면 9번을 입력해 주세요.");
 
             int num = scr.nextInt();
