@@ -14,15 +14,15 @@ public class Application {
             System.out.println("아직도 현준이의 친구가 아니십네까? \n 회원 가입을 원하시면 2번");
             System.out.println("종료를 원하시면 9번을 입력해 주세요.");
 
-            int num = scr.nextInt();
+            String num = scr.nextLine();
 
             switch (num) {
-                case 1: loginService.login();
+                case "1": loginService.login();
                     break; /*Service 에게 내릴 1번 명령*/
-                case 2: loginService.signUp();
+                case "2": loginService.signUp();
                     break; /*Service 에게 내릴 2번 명령*/
 
-                case 9: System.out.println("정말로 끄셔유..? 원하시면.. \"yes\"");
+                case "9": System.out.println("정말로 끄셔유..? 원하시면.. \"yes\"");
                 if (scr.nextLine().equals("yes")) {
                     System.out.println("네 종료합니다.");
                     break loop;
@@ -31,6 +31,7 @@ public class Application {
                 }
                 default:
                     System.out.println("다시 입력해 주세요.");
+                    break ;
             }
         }
 

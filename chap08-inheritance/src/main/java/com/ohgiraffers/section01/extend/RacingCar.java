@@ -22,4 +22,5 @@ public class RacingCar extends Car {
         System.out.println("레이싱카가 멈춥니다.");
     }
 
+
 }

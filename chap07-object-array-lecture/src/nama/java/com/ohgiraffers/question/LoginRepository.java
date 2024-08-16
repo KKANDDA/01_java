@@ -19,13 +19,22 @@ public class LoginRepository {
     }
 
     public boolean login(UserDTO user) {
-        for (int i = 0; i < members.length; i++) {
-            if(members[i].getId().equals.(user.getId())) && (members[i].getPwd().equals.(user.getPwd()))
-            return true;
-        }else{
+        if(members[0].equals(null)) {
+            System.out.println("회원 정보가 없습니다.");
             return false;
         }
+        for (int i = 0; i < members.length; i++) {
+            if (members[i].getId().equals(user.getId()) && (members[i].getPwd().equals(user.getPwd()))) {
+                System.out.println(members[i].getName()+"님, 어서오세요.");
+                return true;
+            } else {
+                System.out.println("아이디나 비밀번호가 틀렸습니다.");
+                return false;
+            }
+
+        }
+        return false;
 
     }
-
 }
+
