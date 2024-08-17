@@ -1,28 +1,17 @@
 package main.java.com.ohgiraffers.understand.service;
 
+import main.java.com.ohgiraffers.understand.auth.SnsAuth;
 import main.java.com.ohgiraffers.understand.dto.MemberDTO;
 
-import java.util.Scanner;
-
 public class MemberService {
-
-    MemberDTO[] members ;
-
+    // 전역변수
+    private SnsAuth snsAuth;
+    // 생성자
+    public MemberService(SnsAuth snsAuth) {
+        this.snsAuth = snsAuth;
+    }
     public boolean findMember(MemberDTO memberDTO){
-        if(members == null){
-            return false;
-        }
-        for (int i = 0; i < members.length; i++) {
-            if(members[i].getId().equals(memberDTO.getId()) &&
-            (members[i].getPwd().equals(memberDTO.getPwd()))){
-                return true;
-            }else{
-                System.out.println("아이디, 비밀번호가 다릅니다.");
-                return false;
-            }
-
-        }
-        return false;
-
+        boolean result = snsAuth.login(memberDTO);
+        return result;
     }
 }
