@@ -2,15 +2,20 @@ package main.java.com.ohgiraffers.understand.dto;
 
 public class MemberDTO {
     private String id;
+    private String name;
     private String pwd;
 
-    public MemberDTO() {
-    }
+    public MemberDTO() {}
 
     public MemberDTO(String id, String pwd) {
         this.id = id;
         this.pwd = pwd;
+    }
 
+    public MemberDTO(String id, String name, String pwd) {
+        this.id = id;
+        this.name = name;
+        this.pwd = pwd;
     }
 
     public String getId() {
@@ -19,6 +24,14 @@ public class MemberDTO {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPwd() {

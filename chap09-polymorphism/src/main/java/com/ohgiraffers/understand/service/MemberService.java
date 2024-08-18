@@ -14,4 +14,9 @@ public class MemberService {
         boolean result = snsAuth.login(memberDTO);
         return result;
     }
+    public boolean addMember(MemberDTO memberDTO){
+        boolean result = snsAuth.signUp(memberDTO);
+        return result;
+
+    }
 }
