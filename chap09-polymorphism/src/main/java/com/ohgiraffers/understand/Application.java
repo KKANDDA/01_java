@@ -45,17 +45,17 @@ public class Application {
                     System.out.println("확인을 위해 한 번 더 입력해주세요.");
                     String pwd2 = scr.nextLine();
                     if (pwd1.equals(pwd2)){
-                        memberDTO.setPwd("pw1");
+                        memberDTO.setPwd(pwd1);
                         break;
-                    }else{
+                    }
+                    else{
                         System.out.println("일치하지 않습니다.");
-                        continue;
                     }
                 }
             }
 
             boolean result;
-            loop:switch(choice){
+            switch(choice){
                 case 1:
                     memberService = new MemberService(new GoogleAuth());
                     result = memberService.findMember(memberDTO);
@@ -86,7 +86,7 @@ public class Application {
                     result = memberService.addMember(memberDTO);
                     if (result) {
                         System.out.println("google 회원가입에 성공하였습니다." + memberDTO.getName());
-                        return;
+                        continue ;
                     }
                     break;
                 case 22:
@@ -94,7 +94,7 @@ public class Application {
                     result = memberService.addMember(memberDTO);
                     if (result) {
                         System.out.println("google 회원가입에 성공하였습니다." + memberDTO.getName());
-                        return;
+                        continue ;
                     }
                     break;
                 case 33:
@@ -102,13 +102,13 @@ public class Application {
                     result = memberService.addMember(memberDTO);
                     if (result) {
                         System.out.println("google 회원가입에 성공하였습니다." + memberDTO.getName());
-                        continue loop2;
+                        continue;
                     }
                     break;
 
                 case 9:
                     System.out.println("서비스를 종료합니다.");
-                    break loop;
+                    return;
 
                 default:
                     System.out.println("다시 입력해주세요.");

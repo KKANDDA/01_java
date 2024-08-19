@@ -4,7 +4,7 @@ import main.java.com.ohgiraffers.understand.auth.SnsAuth;
 import main.java.com.ohgiraffers.understand.dto.MemberDTO;
 
 public class NaverAuth implements SnsAuth {
-    private final static MemberDTO[] naverMembers = new MemberDTO[888888888];
+    private final static MemberDTO[] naverMembers = new MemberDTO[10];
     private static int count;
     MemberDTO naverMember = new MemberDTO("naver", "네버루", "naver");
 

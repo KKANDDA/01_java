@@ -4,7 +4,7 @@ import main.java.com.ohgiraffers.understand.auth.SnsAuth;
 import main.java.com.ohgiraffers.understand.dto.MemberDTO;
 
 public class GoogleAuth implements SnsAuth {
-    private final static MemberDTO[] googleMembers = new MemberDTO[999999999]; ;
+    private final static MemberDTO[] googleMembers = new MemberDTO[10]; ;
     private static int count;
     MemberDTO googleMember = new MemberDTO("google", "구그루","google");
 
