@@ -5,8 +5,12 @@ import main.java.com.ohigiraffers.section01.list.dto.BookDTO;
 import java.util.Comparator;
 
 public class AscendingPrice implements Comparator<BookDTO> {
-
     @Override
+    public int compare(BookDTO o1, BookDTO o2) {
+        return 0;
+    }
+
+    /*@Override
     public int compare(BookDTO o1, BookDTO o2) { // sort 는 어찌 작동하는지 몰라도 되나, 기준은 알려줘야 한다.
 
         int result = 0;
@@ -20,5 +24,5 @@ public class AscendingPrice implements Comparator<BookDTO> {
         }
         return result;
 
-    }
+    }*/
 }
