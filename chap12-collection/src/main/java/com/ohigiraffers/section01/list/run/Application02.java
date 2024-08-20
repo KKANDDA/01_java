@@ -13,7 +13,11 @@ public class Application02 {
 
         List<BookDTO> bookList = new ArrayList<BookDTO>();
 
-        BookDTO book1 = new BookDTO();
+        /*BookDTO book1 = new BookDTO();
+        book1.setNum(6);
+        System.out.println(book1.getNum());
+        Application03 a3 = new Application03(book1.getNum());*/
+
 
         bookList.add(new BookDTO(1, "홍길동전", "허균", 50000));
         bookList.add(new BookDTO(2, "목민심서", "정약용", 30000));
