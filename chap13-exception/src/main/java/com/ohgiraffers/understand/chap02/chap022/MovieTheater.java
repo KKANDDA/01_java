@@ -22,9 +22,8 @@ public class MovieTheater {
             int totalSeats = scr.nextInt();
             scr.nextLine();
 
-            MovieDTO movieDTO = new MovieDTO(title, runTime, totalSeats);
+            MovieDTO movieDTO = new MovieDTO(title, runTime, totalSeats, totalSeats);
             MovieTheater.movies.add(movieDTO);
-
         }
 
     }
@@ -39,7 +38,6 @@ public class MovieTheater {
     public void reservationService (String title){
         for(MovieDTO movie: movies)
         {
-
             if (movie.getTitle().equals(title))
             {
                 System.out.println(title + " 의 예매 가능한 좌석 수: "
@@ -53,13 +51,11 @@ public class MovieTheater {
                 }
                 else
                 {
-                    movie.setReservedSeats(count);
-                    movie.setAvailableSeats((movie.getTotalSeats() - movie.getReservedSeats()));
+                    movie.setReservedSeats(movie.getReservedSeats() + count);
+                    movie.setAvailableSeats((movie.getAvailableSeats() - count));
                     System.out.println("남은 좌석 수: "
                             + movie.getAvailableSeats());
                 }
-
-
 
             }
 

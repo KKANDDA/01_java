@@ -4,7 +4,7 @@ public class MovieDTO {
 
     private String title;
     private String runTimeMinute;
-    private int totalSeats;
+    private int totalSeats ;
     private int reservedSeats;
     // 여기까지가 과제 조건
     private int availableSeats;
@@ -12,7 +12,7 @@ public class MovieDTO {
     public MovieDTO() {
     }
 
-    public MovieDTO(String title, String runTimeMinute, int availableSeats) {
+    public MovieDTO(String title, String runTimeMinute, int availableSeats, int totalSeats) {
         this.title = title;
         this.runTimeMinute = runTimeMinute;
         this.totalSeats = totalSeats;
