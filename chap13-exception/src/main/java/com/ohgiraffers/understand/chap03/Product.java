@@ -43,6 +43,8 @@ public class Product {
 
     // 재고 감소 메소드
     public void reduceStock(int quantity){
-        productStock -= quantity;
+        if(isInStock(quantity)){
+            productStock -= quantity;
+        }
     }
 }
