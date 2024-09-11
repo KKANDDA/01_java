@@ -1,3 +1,4 @@
+/*
 package main.java.com.ohigiraffers.understand02.controller;
 
 import main.java.com.ohigiraffers.understand02.dto.BookDTO;
@@ -26,6 +27,7 @@ public class BookManager {
 
     public int searchBook(String title){
         // 전달 받은 도서 제목으로 도서를 검색하고 결과값 반환
+        return
     }
 
 
@@ -47,3 +49,4 @@ public class BookManager {
         // 향상된 for 문을 이용하여 출력
     }
 }
+*/
