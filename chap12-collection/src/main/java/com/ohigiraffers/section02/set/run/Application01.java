@@ -26,12 +26,12 @@ public class Application01 {
         hset.add(new String("jdbc"));
         hset.add(new String("mysql"));
         hset.add(new String("css"));
-        hset.add("java"); // 값 자체
+        hset.add("java"); // 값 자체로도 추가가 가능하다. 중복 저장을 허용하지 않는다.
         System.out.println(hset);
 
         System.out.println(hset.size());
 
-        System.out.println(hset.contains("java")); // 검색 기능
+        System.out.println(hset.contains("java")); // 검색 기능. 있냐 없냐로 알려 준다. 트루 펄스.
         System.out.println(hset.contains(new String("java"))); // 동등 객체면 같은 주소값이도록 오버라이딩 되어있다.
 
         // 1. toArray() 이용해 배열로 바꿈
