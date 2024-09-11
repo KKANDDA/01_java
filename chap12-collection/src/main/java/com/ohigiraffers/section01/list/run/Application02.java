@@ -47,15 +47,18 @@ public class Application02 {
 
         // 책 제목을 기준으로 오름차순
         System.out.println("------- 책 제목 기준 오름차순 ---------");
-        bookList.sort(new Comparator<BookDTO>() {
+        bookList.sort(new Comparator<BookDTO>() // 컴퍼레이터 생성자를 호출하였고 <>제네릭으로 클래스를 타입 지정하여 클래스 필드에 접근할 수 있도록 하였다.
+        {
             @Override
-            public int compare(BookDTO o1, BookDTO o2) {
+            public int compare(BookDTO o1, BookDTO o2)
+            {
                 // compareTo() : 앞의 값이 더 작은 경우 음수 반환
                 // 같으면 0, 앞이 크면 양수 반환
                 return o1.getTitle().compareTo(o2.getTitle());
 
             }
-        });
+        }
+        );
         for(BookDTO book : bookList){
             System.out.println(book);
         }

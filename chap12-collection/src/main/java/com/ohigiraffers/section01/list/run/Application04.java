@@ -13,7 +13,7 @@ public class Application04 {
 
         Stack<Integer> integerStack = new Stack<>();
 
-        //push() ; 값으 넣을 때 이용하는 메소드
+        //push() ; 값을 넣을 때 이용하는 메소드
         integerStack.push(1);
         integerStack.push(2);
         integerStack.push(3);

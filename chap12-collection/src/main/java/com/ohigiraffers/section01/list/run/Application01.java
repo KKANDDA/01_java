@@ -66,7 +66,7 @@ public class Application01 {
         }
 
         list.add("apple");
-        System.out.println("list = " + list); // 중복 저장도 가능하다.
+        System.out.println("list = " + list); // 중복 저장도 가능하다. 마지막에 추가된다.
 
         // 원하는 인덱스 위치에 값을 추가할 수도 있다.
         list.add(1,"banana");
@@ -94,7 +94,7 @@ public class Application01 {
          * collection 에서 사용되는 기능들을 static 메소드로 구현해 놓은 클래스
          * */
 
-        Collections.sort(stringsList);
+        Collections.sort(stringsList); // 오름차순으로 정렬했다.
         System.out.println("stringlist = " + stringsList);
 
 
