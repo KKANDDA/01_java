@@ -37,7 +37,7 @@ public class Application04 {
         System.out.println("pop() : " + integerStack.pop());
         System.out.println("pop() : " + integerStack.pop());
         System.out.println("pop() : " + integerStack.pop());
-        System.out.println(integerStack); // 빼고 제거하고 빼고 제거하고..
+        System.out.println(integerStack); // 빼고 제거하고 빼고 제거하고.. 해서 남은 거시 이거시다.
 
     }
 }
